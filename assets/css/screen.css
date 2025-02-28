@@ -685,6 +685,11 @@
         position: sticky; /* On larger screens, TOC will stay in the same spot on the page */
         top: 4vmin;
     }
+
+    .gh-toc .toc-list-item {
+        overflow-x: visible;
+        width: 220px;
+    }
 }
 
 .gh-toc .is-active-link::before {
