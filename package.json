@@ -1,5 +1,5 @@
 {
-    "name": "journal",
+    "name": "journal-marketunpack",
     "description": "A Ghost theme",
     "version": "1.0.0",
     "private": true,
@@ -8,7 +8,7 @@
     },
     "license": "MIT",
     "author": {
-        "name": "Ghost Foundation",
+        "name": "Ghost Foundation (modified for MarketUnpack)",
         "email": "hello@ghost.org",
         "url": "https://ghost.org"
     },
