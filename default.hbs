@@ -9,6 +9,8 @@
 
     <script id="MathJax-script" async src="/deps/mathjax/es5/tex-mml-chtml.js"></script>
 
+    <link rel="stylesheet" href="/deps/ghost-js/tocbot/tocbot.css">
+
     {{ghost_head}}
 </head>
 
@@ -112,6 +114,20 @@
 
 <script src="{{asset "built/main.min.js"}}"></script>
 
+<script src="/deps/ghost-js/tocbot/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.gh-toc',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.gh-content',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: 'h2, h3',
+        collapseDepth: 3,
+        // Ensure correct positioning
+        hasInnerContainers: true,
+    });
+</script>
 {{ghost_foot}}
 
 </body>
