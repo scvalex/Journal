@@ -657,6 +657,40 @@
     }
 }
 
+/* tocbot integration */
+.gh-content {
+    position: relative;
+ }
+
+.gh-toc > .toc-list {
+    position: relative;
+}
+
+.toc-list {
+    overflow: hidden;
+    list-style: none;
+}
+
+@media (min-width: 1300px) {
+     .gh-sidebar-toc {
+        position: absolute; 
+        top: 0;
+        bottom: 0;
+        margin-top: 4vmin;
+        grid-column: main-end / wide-end;
+        padding-left: 2rem;
+    }
+   
+    .gh-toc {
+        position: sticky; /* On larger screens, TOC will stay in the same spot on the page */
+        top: 4vmin;
+    }
+}
+
+.gh-toc .is-active-link::before {
+    background-color: var(--ghost-accent-color); /* Defines TOC   accent color based on Accent color set in Ghost Admin */
+} 
+
 /* MarketUnpack customizations */
 
 .gh-content .table-caption {
