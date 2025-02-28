@@ -656,3 +656,22 @@
         top: 1px;
     }
 }
+
+/* MarketUnpack customizations */
+
+.gh-content .table-caption {
+    margin-top: 1rem !important;
+    text-align: center;
+}
+
+.gh-content table {
+    background: none !important;
+}  
+
+.wide-table {
+    max-width: 180%;
+    margin-right: -24rem;
+    margin-left: -24rem;
+    display: flex;
+    justify-content: center;
+ }
