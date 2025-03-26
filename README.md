@@ -1,5 +1,7 @@
 # Journal
 
+**Fork of Ghost's Journal theme as used on [Market Unpack](https://marketunpack.com)**
+
 A minimal, typography-heavy newsletter theme for [Ghost](https://github.com/TryGhost/Ghost).
 
 **Demo: https://journal.ghost.io**
