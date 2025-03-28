@@ -669,15 +669,17 @@
 
 .gh-toc > .toc-list {
     position: relative;
+    padding-bottom: 1rem;
 }
 
 .toc-list {
     overflow: hidden;
     list-style: none;
+    line-height: 1.2;
 }
 
 @media (min-width: 1300px) {
-     .gh-sidebar-toc {
+    .gh-sidebar-toc {
         position: absolute; 
         top: 0;
         bottom: 0;
@@ -685,7 +687,7 @@
         grid-column: main-end / wide-end;
         padding-left: 4rem;
     }
-   
+
     .gh-toc {
         position: sticky; /* On larger screens, TOC will stay in the same spot on the page */
         top: 4vmin;
@@ -696,6 +698,15 @@
     .gh-toc .toc-list-item {
         overflow-x: visible;
         width: 220px;
+        margin-top: 1.5rem;
+    }
+
+    .gh-toc .toc-list-item .toc-list {
+        margin-top: 0;
+    }
+
+    .gh-toc .toc-list-item .toc-list-item {
+        margin-top: 1rem;
     }
 }
 
@@ -720,4 +731,4 @@
     margin-left: -24rem;
     display: flex;
     justify-content: center;
- }
+}
