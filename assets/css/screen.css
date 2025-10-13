@@ -732,3 +732,28 @@
     display: flex;
     justify-content: center;
 }
+
+.mu-foot-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    font-size: 1.3rem;
+}
+
+.no-menu .mu-foot-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.mu-socials {
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .mu-foot-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
